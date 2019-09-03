@@ -3,7 +3,8 @@ const moment = require('moment');
 exports.handler = async (event, context) => {
   const body = {
     key: process.env.API_KEY,
-    timestamp: moment().unix()
+    timestamp: moment().unix(),
+    message: 'yes, hello'
   };
 
   return {
