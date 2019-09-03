@@ -1,0 +1,23 @@
+{
+  "name": "code-pipeline-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brute-force/code-pipeline-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brute-force/code-pipeline-test/issues"
+  },
+  "homepage": "https://github.com/brute-force/code-pipeline-test#readme",
+  "devDependencies": {
+    "semistandard": "^14.0.1"
+  }
+}
