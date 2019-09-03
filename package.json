@@ -19,5 +19,8 @@
   "homepage": "https://github.com/brute-force/code-pipeline-test#readme",
   "devDependencies": {
     "semistandard": "^14.0.1"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
   }
 }
