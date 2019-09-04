@@ -4,7 +4,7 @@ exports.handler = async (event, context) => {
   const body = {
     key: process.env.API_KEY,
     timestamp: moment().unix(),
-    message: 'yes, hello!'
+    message: 'yes, hello!!'
   };
 
   return {
