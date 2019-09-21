@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: sam lambda template
+
+Resources:
+ Function:
+   Type: AWS::Serverless::Function
+   Properties:
+     FunctionName: code-pipeline-test
+     Handler: index.handler
+     CodeUri: ./build
+     Role: arn:aws:iam::AWS_ACCOUNT:role/code-pipeline-test
+     Runtime: nodejs10.x
+     MemorySize: 128
+     Timeout: 9
+     Environment:
+       Variables:
+         API_KEY: '{{resolve:ssm:/CodeBuild/code-pipeline-test/API_KEY:1}}'
